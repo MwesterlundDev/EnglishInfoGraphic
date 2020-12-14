@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Income Inequality</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/c0ba5aac6f.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/tooltip.css">
+
+
+	<!-- libs -->
+	<script src="js/lib/d3-4.0.js"></script>
+	<script src="js/lib/jquery-1.12.4.js"></script>
+	<script src="js/lib/jquery-ui-1.12.1.js"></script>
+	<script src="js/lib/bootstrap-2.3.0.js"></script>
+	<script src="js/lib/jquery.mousewheel-3.0.6.js"></script>
+	<script src="js/lib/jquery.mcustomscrollbar.js"></script>
+	<!--script src="js/lib/jquery.jscrollpane.js"></script-->
+
+	<script src="js/lib/rcs.js"></script>
+	<script src="js/lib/rcs-tooltips.js"></script>
+
+	<!-- my code -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="main">
+		<div id="header">
+			<h1>Universal Basic Income</h1>
+			<h5>How it can solve wealth inequality</h5>
+		</div>
+
+		<div id="ubi-def-section" class="section">
+			<div class="section-header">
+				<h2>What Is Universal Basic Income?</h2>
+				<h5>Universal Basic Income is a program where a government provides a set amount of money to every citizen or resident on a regular basis.</h5>
+			</div>
+
+			<div class="image">
+				<img id="distribution-image" src="./images/distribution.png" />
+			</div>
+			<label class="source-label">Source: The Balance [1]</label>
+		</div>
+
+		<div id="ubi-def-section" class="section">
+			<div class="section-header">
+				<h2>What Can It Be Used For?</h2>
+				<h5>Universal Basic Income is a cash transfer program, so it can be used for anything, including:</h5>
+			</div>
+
+			<div id="middle-section">
+				<div class="sub-section right-border">
+					<ul>
+						<li><i class="fas fa-home blue"></i>Housing</li>
+						<li><i class="fas fa-school yellow"></i>Education</li>
+						<li><i class="fas fa-file-medical red"></i>Medical Bills</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<ul>
+						<li><i class="fas fa-bread-slice yellow"></i>Food</li>
+						<li><i class="fas fa-file-invoice-dollar green"></i>Utilities</li>
+						<li><i class="fas fa-plane blue"></i>Vacations</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="inequality-def-section" class="section">
+			<div class="section-header">
+				<h2>What is Wealth Inequality?</h2>
+				<h5>The main problem Universal Basic Income is intended to solve is wealth inequality. Wealth inequality is how wealth, defined as money and assets, is unevenly spread across a population. Wealth inequality has grown 
+					dramatically since 1990, and currently the top 10% of income earners own over 68% of wealth.</h5>
+			</div>
+			<div id="wi-line" class="sub-section">
+				<svg id="wi-line-svg"></svg>
+			</div>
+			<div id="wi-pie" class="sub-section">
+				<svg id="wi-pie-svg"></svg>
+			</div>
+			<div id="legend">
+				<svg id="legend-svg"></svg>
+			</div>
+			<label class="source-label">Source: The Federal Reserve [2]</label>
+		</div>
+		<div id="inequality-reasons" class="section">
+			<div class="section-header">
+				<h2>Why does Wealth Inequality exit?</h2>
+				<h5>Wealth builds up in higher percentiles for different economic reasons:</h5>
+			</div>
+			<div id="middle-section">
+				<div class="sub-section right-border">
+					<h5>Systemic:</h5>
+					<ul>
+						<li><i class="fas fa-robot green"></i>Automation</li>
+						<li><i class="fas fa-globe-americas blue"></i>Outsourcing</li>
+						<li><i class="fas fa-percentage red"></i>Tax Systems</li>
+						<li><i class="fas fa-landmark yellow"></i>Financial Deregulation</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					
+					<h5>Individual:</h5>
+					<ul>
+						<li><i class="fas fa-user-graduate yellow"></i>Education Opportunities</li>
+						<li><i class="fas fa-piggy-bank green"></i>Inheritance</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="source-label-3">
+				<label class="source-label">Source: Pew Research [3]</label>
+			</div>
+		</div>
+		<div id="ubi-def-section" class="section">
+			<div class="section-header">
+				<h2>What Should be known about it?</h2>
+				<h5>Universal Basic Income can help in many ways, but there can also be some drawbacks.</h5>
+			</div>
+
+			<div id="middle-section">
+				<div class="sub-section">
+					<h5>Cons:</h5>
+					<ul>
+						<li><i class="fas fa-coins yellow"></i>Expensive</li>
+						<li><i class="fas fa-percentage red"></i>Can Cause Inflation</li>
+						<li><i class="fas fa-users blue"></i>Can depress work participation</li>
+					</ul>
+				</div>
+				<div class="sub-section right-border">
+					<h5>Pros:</h5>
+					<ul>
+						<li><i class="fas fa-wallet red"></i>Provides financial security</li>
+						<li><i class="fas fa-credit-card blue"></i>Reduces financial stress</li>
+						<li><i class="fas fa-hand-holding-usd green"></i>Transfers money to everyone</li>
+						<li><i class="fas fa-chart-line yellow"></i>Increases economic demand</li>
+					</ul>
+				</div>
+			</div>
+			<label class="source-label">Source: The Balance [1]</label>
+		</div>
+
+		<div id="ubi-def-section" class="section">
+			<div class="section-header">
+				<h2>How can we get it?</h2>
+				<h5>Universal Basic Income is a pretty new idea. There are currently a few studies to see how it will impact people and society. 
+					Before Universal Basic Income is implemented, there are a few things you can do to understand more and spread the idea: </h5>
+			</div>
+
+			<div id="middle-section">
+				<span class="bottom-section-span"><i class="fas fa-comment green"></i>Talk with friends and family</span>
+				<span class="bottom-section-span"><i class="fas fa-search yellow"></i>Do more research</span>
+				<span class="bottom-section-span"><i class="fas fa-vote-yea blue"></i>Vote</span>
+			</div>
+		</div>
+		<div id="bottom-spacer">
+			<div class="sources">
+				<label>Sources:</label>
+				<label>[1]https://www.thebalance.com/universal-basic-income-4160668</label>
+				<label>[2]https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/table/</label>
+				<label>[3]https://www.pewsocialtrends.org/2020/01/09/what-americans-see-as-contributors-to-economic-inequality/psdt_01-10-20_economic-inequality_3-0/</label>
+				<label>Icons:</label>
+				<label>Font Awesome: https://fontawesome.com/</label>
+				<label>Charts created with D3.js</label>
+				<label>https://d3js.org/</label>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

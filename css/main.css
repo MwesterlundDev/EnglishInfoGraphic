@@ -1,0 +1,202 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0px;
+	font-family: 'Montserrat', Helvetica, sans-serif;
+	/* background: radial-gradient(circle at 0% 100%, rgb(9, 9, 8), rgb(34, 36, 39) 100%); */
+	color: rgb(255, 255, 255);
+	height: 100%;
+	width: 100%;
+	font-size: 10px;
+	min-width: 1000px;
+	min-height: 750px;
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+	box-sizing: border-box;
+	/* overflow-y: hidden; */
+}
+
+
+h1 {
+	font-size: 72px;
+	font-family: 'Montserrat';
+}
+
+h2 {
+	font-size: 36px;
+	font-family: 'Montserrat';
+}
+
+h5 {
+	font-size: 20px;
+	font-weight:  normal;
+}
+
+#main {
+	/* height: 500px; */
+	width: 1080px;
+	margin: 20px;
+	background: rgb(0, 174, 239);
+	margin: auto;
+	position: relative;
+	float: left;
+}
+
+#header {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	float: left;
+	border-bottom: 1px solid rgb(220, 220, 220);
+	padding: 20px;
+	text-align: center;
+}
+
+#inequality-def-section {
+	/* text-align: center; */
+}
+
+.section {
+	width: 100%;
+	float: left;
+	position: relative;
+	padding: 10px 40px 20px 40px;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.section-header {
+	width: 100%;
+	position: relative;
+	float: left;
+	text-align: center;
+}
+
+.sub-section {
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+#legend {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	float: left;
+	text-align: center;
+}
+
+#inequality-reasons {
+	text-align: center;
+}
+
+.sub-section {
+	text-align: left;
+}
+
+li {
+	list-style: none;
+	font-size: 16px;
+	margin: 10px;
+}
+
+i {
+	margin-right: 15px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+}
+
+#middle-section {
+	width: 800px;
+	height: 100%;
+	position: relative;
+	margin-left: 150px;
+}
+
+.green {
+	color: rgb(13, 255, 181);
+}
+
+.red {
+	color: rgb(255, 74, 25);
+}
+
+.yellow {
+	color: rgb(255, 197, 25);
+}
+
+.blue {
+	color: rgb(13, 57, 255);
+}
+
+.white {
+	color: rgb(255, 255, 255);
+}
+
+.image {
+	width: 100%;
+	position: relative;
+	float: left;
+	text-align: center;
+}
+
+.bottom-section-span {
+	width: 200px;
+	font-size: 16px;
+	margin: 10px;
+}
+
+#bottom-spacer {
+	height: 140px;
+	width: 100%;
+	position: relative;	
+	float: left;
+	padding: 10px 40px 0px 40px;
+
+}
+
+.bottom-section {
+	width: 100%;
+	float: left;
+	position: relative;
+	padding: 10px 40px 0px 40px;
+	/* border-bottom: 1px solid rgb(220, 220, 220); */
+}
+
+.sources {
+	width: 100%;
+	position: relative;
+	float: left;
+	text-align: left;
+	font-size: 10px;
+}
+
+.sources label {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+.source-label {
+	position: relative;
+	float: left;
+	text-align: left;
+	font-size: 10px;
+}
+
+#source-label-3 {
+	position: relative;
+	float: left;
+	width: 100%;
+}
